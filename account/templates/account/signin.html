@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <h2>createAccount</h2>
+
+    <form id="signinForm", method = "post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="name" maxlength="75" required>
+        <p id="usernameError" style="color: red;"></p>
+
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" name="password" maxlength="75" required>
+        <p id="pwError" style="color: red;"></p>
+
+        <label for="email">email:</label>
+        <input type="text" id="email" name="email" maxlength="254" required>
+        <p id="emailError" style="color: red;"></p>
+
+        <label for="phomenumber">Phonenumber:</label>
+        <input type="text" id="phonenumber" name="phonenumber" required maxlength="11" required>
+        <p id="phError" style="color: red;"></p>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required maxlength="11" required>
+        <p id="ageError" style="color: red;"></p>
+
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required maxlength="11" required>
+        <p id="genderError" style="color: red;"></p>
+
+        <input type="submit" value=확인>
+    </form>
+
+</body>
+</html>

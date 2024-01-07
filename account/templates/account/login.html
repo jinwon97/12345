@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Name Form</title>
+</head>
+<body>
+    <form method="post", id = "loginForm">
+        {% csrf_token %}
+        <label for="input_name">Enter Name:</label>
+        <input type="text" id="input_name" name="name" required>
+        <label for="input_password">Enter Password:</label>
+        <input type="password" id="input_password" name="password" required>
+        <button type="submit">Check user</button>
+    </form>
+</body>
+</html>
